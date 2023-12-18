@@ -1,17 +1,15 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import Layout from "../../components/layout/Layout";
 import myContext from "../../context/data/myContext";
 
 const Home = () => {
   const context = useContext(myContext);
-  const { state, color } = context;
+  const { mode, toggleMode } = context;
   return (
     <Layout>
-      <div>
-        <p>Name:{state.name}</p>
-        <p>Fame:{state.fame}</p>
-      </div>
-      <div>{color}</div>
+      <div>Home</div>
+      <div></div>
+      <button onClick={toggleMode}>Toggle</button>
     </Layout>
   );
 };
