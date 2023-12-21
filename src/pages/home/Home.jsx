@@ -1,9 +1,12 @@
+import Filter from "../../components/filter/Filter";
+import HeroSection from "../../components/herosection/HeroSection";
 import Layout from "../../components/layout/Layout";
 
 const Home = () => {
   return (
     <Layout>
-      <div>Home</div>
+      <HeroSection />
+      <Filter />
     </Layout>
   );
 };
