@@ -6,6 +6,9 @@ import Cart from "./pages/cart/Cart";
 import Dashboard from "./pages/admin/dashboard/Dashboard";
 import NoPage from "./pages/noPage/NoPage";
 import MyState from "./context/data/myState";
+import Login from "./pages/registration/Login";
+import Signup from "./pages/registration/Signup";
+import ProductInfo from "./pages/productInfo.jsx/ProductInfo";
 
 function App() {
   return (
@@ -16,6 +19,10 @@ function App() {
           <Route path="/order" element={<Order />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+
+          <Route path="/productinfo/:id" element={<ProductInfo />} />
           <Route path="/*" element={<NoPage />} />
         </Routes>
       </Router>
