@@ -114,7 +114,9 @@ function MyState(props) {
       toast.success("Product Updated successfully");
       getProductData();
       setLoading(false);
-      window.location.href = "/dashboard";
+      setTimeout(() => {
+        window.location.href = "/dashboard";
+      }, 800);
     } catch (error) {
       setLoading(false);
       console.log(error);
