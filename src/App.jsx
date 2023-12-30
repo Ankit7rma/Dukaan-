@@ -15,7 +15,7 @@ import MyState from "./context/data/myState";
 import Login from "./pages/registration/Login";
 import Signup from "./pages/registration/Signup";
 import ProductInfo from "./pages/productInfo.jsx/ProductInfo";
-import AddProduct from "./pages/admin/pages/addProduct";
+// import AddProduct from "./pages/admin/pages/addProduct";
 import UpdateProduct from "./pages/admin/pages/updateProduct";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -47,14 +47,14 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/productinfo/:id" element={<ProductInfo />} />
           <Route path="/cart" element={<Cart />} />
-          <Route
+          {/* <Route
             path="/addproduct"
             element={
               <ProtectedRoutesForAdmin>
                 <AddProduct />
               </ProtectedRoutesForAdmin>
             }
-          />
+          /> */}
           <Route
             path="/updateproduct"
             element={
