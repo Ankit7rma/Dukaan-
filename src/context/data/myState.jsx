@@ -123,6 +123,7 @@ function MyState(props) {
     }
     setProducts("");
   };
+  // console.log()
 
   const deleteProduct = async (item) => {
     try {
